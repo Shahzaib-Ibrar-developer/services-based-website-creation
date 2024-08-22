@@ -1,0 +1,201 @@
+
+
+#about{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8rem;
+
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    color: rgb(92, 92, 92);
+}
+
+
+
+
+.about-text-content h1{
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-text-content p{
+    text-align: center;
+    font-size: .9rem;
+    max-width: 90%;
+    line-height: 2rem;
+    margin: auto;
+}
+
+
+
+.skills-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+.total-line{
+    width: 100%;
+    height: .125rem;
+    background-color: lightgray;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+.percentage-line{
+    width: 80%;
+    height: .25rem;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.edge-button{
+    height: .625rem;
+    width: .625rem;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+}
+
+.edge-button::after{
+    content: '80%';
+    position: absolute;
+    bottom: 200%;
+    left: 50%;
+    translate: -50%;
+    padding: .25rem 1rem ;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: 400;
+}
+
+
+.skill > p{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill > p> i{
+    font-size: 1.25rem;
+}
+
+
+
+
+
+.skill1 .percentage-line{
+    width: 60%;
+    background-color: #F18B6D;
+}
+
+
+.skill1 .edge-button{
+    background-color: #F18B6D;
+}
+.skill1 .edge-button::after{
+    content: '60%';
+    background-color: #F18B6D;
+}
+
+.skill1 > p{
+    color: #F18B6D;
+}
+
+
+
+
+
+
+
+
+
+
+.skill2 .percentage-line{
+    width: 82%;
+    background-color: #F1D204;
+}
+
+
+.skill2 .edge-button{
+    background-color: #F1D204;
+}
+.skill2 .edge-button::after{
+    content: '82%';
+    background-color: #F1D204;
+}
+
+.skill2 > p{
+    color: #F1D204;
+
+}
+
+
+
+
+
+
+
+.skill3 .percentage-line{
+    width: 86%;
+    background-color: #6A4D8A;
+}
+
+
+.skill3 .edge-button{
+    background-color: #6A4D8A;
+}
+.skill3 .edge-button::after{
+    content: '86%';
+    background-color: #6A4D8A;
+}
+
+.skill3 > p{
+    color: #6A4D8A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .skills-box{
+        grid-template-columns: 1fr;
+    }
+    .about-text-content p{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,199 @@
+
+
+
+
+
+
+#contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    
+}
+
+
+#contact-us h1 {
+    font-size: 2.25rem;
+}
+
+
+
+
+.contact-content{
+    width: 100%;
+
+}
+
+.contact-address-support{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+
+
+}
+
+
+
+.address,.support{
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.address > p:first-of-type,.support > p:first-of-type{
+    color: #F1D204;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.address > p:last-of-type,.support > div p{
+    color: darkgray;
+    font-size: .9rem;
+}
+
+.support > div>p:first-of-type>span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.address > .seperator,.support>.seperator{
+    width: 2px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+
+
+
+.social-media-links{
+    flex: 1;
+
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-end;
+}
+.social-media-links i{
+    font-size: 1.25rem;
+    color: darkgray;
+    transition: .5s;
+    cursor: pointer;
+}
+.social-media-links i:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form{
+    position: relative;
+}
+
+.form-top{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-top>div{
+    flex: 1;
+}
+
+.form-top > div p{
+    color: gray;
+    font-size: .95rem;
+}
+
+
+
+.form-top>div>input{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid lightgray;
+    outline: none;
+    color: gray;
+}
+.form-top>div>input:focus{
+    border: 1px solid lightgray;
+    outline: none;
+
+}
+
+
+
+
+.form-bottom{
+    margin-bottom: 2rem;
+}
+
+.form-bottom textarea{
+    width: 100%;
+    height: 200px;
+
+    padding: .5rem;
+    border: 1px solid lightgray;
+    outline: none;
+    color: gray;
+}
+
+.contact-form>button{
+    padding: .75rem 4rem;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    background-color: #F1D204;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    
+
+    .contact-address-support{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    .address,.support{
+        max-width: 100%;
+    }
+
+    .seperator{
+        display: none;
+    }
+
+    .social-media-links{
+        justify-content: flex-start;
+    }
+
+    .form-top{
+        flex-direction: column;
+    }
+}

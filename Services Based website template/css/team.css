@@ -1,0 +1,185 @@
+
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+
+    background-image: url(/images/diagonal-lines.png);
+}
+
+
+
+.team-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team-text-content h1 {
+    font-size: 2.25rem;
+
+}
+
+.team-text-content p {
+    text-align: center;
+}
+
+
+
+.team-members-boxes {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.member-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: calc(100%/3);
+
+}
+
+.member-box img {
+    height: 8rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+
+
+.member-details {
+    padding-top: .25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+
+.member-heading h3 {
+    font-size: 1.25rem;
+}
+
+
+.member-social {
+    margin-top: .5rem;
+    display: flex;
+    gap: .5rem;
+}
+
+.member-social i {
+    font-size: 1rem;
+    padding: .25rem;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.member-box-1 .member-heading>p,
+.member-box-1 .member-social {
+    color: #F18B6D;
+}
+
+.member-box-2 .member-heading>p,
+.member-box-2 .member-social {
+    color: #F1D204;
+}
+
+.member-box-3 .member-heading>p,
+.member-box-3 .member-social {
+    color: #6A4D8A;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .member-box {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .team-members-boxes {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .member-box {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .team-members-boxes {
+        flex-direction: column;
+
+    }
+
+    .member-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .member-details {
+        align-items: center;
+    }
+
+
+    .member-heading p {
+        text-align: center;
+    }
+
+    .member-footer p{
+        text-align: center;
+    }
+
+
+    .member-social {
+        margin-top: .5rem;
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+    }
+    
+}

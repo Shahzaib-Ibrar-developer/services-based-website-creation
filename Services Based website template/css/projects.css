@@ -1,0 +1,44 @@
+
+
+
+.projects-text-content{
+    padding: 3rem;
+    background-image: url(/images/diagonal-lines.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects-text-content h1{
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.projects-text-content p{
+    text-align: center;
+}
+
+
+
+.projects-images-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.projects-images-container a img{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.projects-images-container a img:hover{
+    opacity: .5;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .projects-images-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

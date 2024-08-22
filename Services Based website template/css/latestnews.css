@@ -1,0 +1,199 @@
+
+#latestnews{
+    background-color: #222F36;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.latest-news-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-bottom: 6rem;
+}
+
+
+
+.latest-news-text-content h2{
+    color: white;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+
+
+.latest-news-text-content p{
+    color: darkgray;
+    text-align: center;
+}
+
+
+.latest-news-text-content button{
+    padding: .5rem 2rem;
+    font-size: 1.125rem;
+    background-color: #F1D204;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+}
+.latest-news-text-content button:hover{
+    background-color: #6A4D8A;
+}
+
+.latest-news-text-content button i{
+    font-size: 1.25rem;
+    vertical-align: middle;
+    background-color: white;
+    color: #F1D204;
+    border-radius: 50px;
+    margin-right: .25rem;
+}
+
+
+
+.latestnews-boxes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.newsbox{
+    background-color: white;
+}
+
+.newsbox img{
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.box-content h3{
+    font-size: 1.5rem;
+}
+
+.box-content a{
+    color: #F1D204;
+    transition: .3s;
+}
+.box-content a:hover{
+    color: #6A4D8A;
+}
+.box-content a i{
+    background-color: #F1D204;
+    color: white;
+    border-radius: 50px;
+    vertical-align: middle;
+    margin-right: .5rem;
+    transition: .3s;
+}
+
+.box-content a:hover i{
+    background-color: #6A4D8A;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .latestnews-boxes{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 4rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#count-down{
+    background-image: url(/images/countdown-bg.jpg);
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+
+.count-box{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    line-height: 3.5rem;
+    color: white;
+}
+.count-box span{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.countdown-center-line{
+    height: 100px;
+    width: 2px;
+    background-color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #count-down{
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .countdown-center-line{
+      display: none;
+    }
+}
+
